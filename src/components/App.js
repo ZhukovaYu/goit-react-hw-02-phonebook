@@ -1,6 +1,5 @@
  
 import React, { Component } from 'react';
-//import {uuid} from 'uuidv4';
 import { nanoid } from 'nanoid';
 import ContactForm from './ContactForm';
 import Filter from './Filter';
@@ -21,7 +20,7 @@ class App extends Component {
 
   addContact = (name, number) => {
     const newContact = {
-      id: uuid(),
+      id: nanoid(),
       name,
       number,
     };
